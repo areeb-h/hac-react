@@ -1,10 +1,10 @@
-import logo from './assets/shared/logo.svg';
-import Navbar from './components/Navbar.js'
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Programs from "./pages/Programs";
 import About from "./pages/About";
-import Technology from "./pages/Technology";
+import Programs from "./pages/Programs";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import Register from "./pages/Register";
 import React from 'react';
 import './App.css';
 
@@ -23,7 +23,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="programs" element={<Programs />} />
-          <Route path="Technology" element={<Technology />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="register" element={<Register />} />
         </Route>
       </Routes>
     </BrowserRouter>
