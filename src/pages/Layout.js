@@ -12,8 +12,8 @@ const Layout = () => {
         setActive(!isActive); 
     };
 
-    const linkStyle = "ff-sans-cond text-dark";
-    const buttonStyle = "ff-sans-cond letter-spacing-2 reg-btn";
+    const linkStyle = "ff-sans-cond letter-spacing-3 text-dark";
+    const buttonStyle = "ff-sans-cond letter-spacing-3 reg-btn";
 
     return (
         <body className="home">
