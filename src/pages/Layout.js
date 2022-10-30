@@ -12,7 +12,7 @@ const Layout = () => {
         setActive(!isActive); 
     };
 
-    const linkStyle = "ff-sans-cond text-dark letter-spacing-2";
+    const linkStyle = "ff-sans-cond text-dark";
     const buttonStyle = "ff-sans-cond letter-spacing-2 reg-btn";
 
     return (
