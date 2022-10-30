@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Programs from "./pages/Programs";
 import About from "./pages/About";
 import Technology from "./pages/Technology";
+import React from 'react';
 import './App.css';
 
 import {
