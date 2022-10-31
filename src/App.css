@@ -255,6 +255,15 @@
   margin-block: 1.5rem;
 }
 
+@media all and (max-width: 54.2rem) { 
+  .logo {
+    width: 5rem;
+    padding: .7rem;
+  }
+}
+
+
+
 nav {
   position: relative;
 }
