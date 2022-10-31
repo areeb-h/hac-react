@@ -63,7 +63,7 @@
   max-width: 50ch;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 50em) {
   .grid-container {
       text-align: left;
       column-gap: var(--container-gap, 2rem);
@@ -251,7 +251,9 @@
   border-radius: .8rem;
   background: hsl( var(--clr-white) / 0.4);
   backdrop-filter: blur(1.1rem);
-  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+  margin-left: clamp(1.5rem, 5vw, 3.5rem);
+  margin-right: clamp(1rem, 3vw, 2rem);
+  margin-block: 1.5rem;
 }
 
 nav {
@@ -314,7 +316,10 @@ nav {
   background-color: aqua;
 } */
 
-@media (max-width: 35rem) {
+
+
+
+@media (max-width: 54.2rem) {
   .primary-navigation {
       text-align: center;
       position: fixed;
@@ -368,15 +373,15 @@ nav {
     border-radius: 2px;
     outline-offset: 5px;
   }
+
 }
 
-@media (min-width: 35em) {
+@media (min-width: 54.2em) {
   .primary-navigation {
     padding-inline: 1rem;
     margin-block: 2rem;
     margin-right: clamp(1.5rem, 5vw, 3.5rem);
     --gap: clamp(1rem, 1vw, 2rem);
-   /* margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);*/
   }
 }
 
@@ -387,12 +392,12 @@ nav {
   }
 }*/
 
-@media (min-width: 45em) {
+/*@media (min-width: 45em) {
   .primary-navigation {
     margin-block: 2rem;
     --gap: clamp(1rem, 1vw, 2rem);
   }
-}
+}*/
 
 .underline-indicators > * {
   cursor: pointer;
@@ -422,7 +427,7 @@ nav {
   border: 0;
 }
 
-@media (max-width: 35rem) {
+@media (max-width: 54.2rem) {
   .link-hover-indicators > * {
     padding: .8rem .5rem;
   }
@@ -509,9 +514,7 @@ body {
 }
 
 .home {
-  /*background-color: #f0f0f0;*/
   background-image: url('./assets/hac-back.png');
-  background-position: center center;
 }
 
 .destination {
@@ -524,8 +527,7 @@ body {
 
 @media (min-width: 35rem) {
   .home {
-    background-position: center center;
-    background-color: #f0f0f0;
+    background-image: url('./assets/hac-back.png');
   }
   .destination {
     background-position: center center;
@@ -536,6 +538,7 @@ body {
 @media (min-width: 45rem) {
   .home {
     /*background-color: #f0f0f0;*/
+    /*background-position: center center;*/
     background-image: url('./assets/hac-back.png');
   }
   .destination {

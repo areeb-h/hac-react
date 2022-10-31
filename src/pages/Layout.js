@@ -19,9 +19,9 @@ const Layout = () => {
         <body className="home">
             <header className="primary-header flex">
                 <img src={logo} alt="space tourism logo" className="logo" />
-                <button aria-expanded={isActive ? "true" : "false"} onClick={Toggle} className="mobile-nav-toggle"><span className="sr-only">Menu</span></button>
+                <button aria-expanded={isActive ? "false" : "true"} onClick={Toggle} className="mobile-nav-toggle"><span className="sr-only">Menu</span></button>
                 <nav>
-                    <ul data-visible={isActive ? "true" : "false"} className="primary-navigation link-hover-indicators flex">
+                    <ul data-visible={isActive ? "false" : "true"} className="primary-navigation link-hover-indicators flex">
                         <NavLink onClick={Toggle}  to="/" end className={linkStyle}>Home</NavLink> 
                         <NavLink onClick={Toggle} to="about" className={linkStyle}>About</NavLink> 
                         <NavLink onClick={Toggle} to="programs" className={linkStyle}>Programs</NavLink>
