@@ -374,7 +374,7 @@ nav {
       background-image: url(./assets/shared/icon-hamburger.svg);
       background-repeat: no-repeat;
       background-position: center;
-      width: 3.5rem;
+      width: 2.5rem;
       aspect-ratio: 1;
       border: 0;
       background-color: hsl( var(--clr-white) / 0.4);
