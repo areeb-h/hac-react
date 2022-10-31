@@ -93,7 +93,6 @@
 .destination-img {
     /*padding-left: clamp(2rem, 1vw, 5rem);*/
     height: auto;
-
     max-width: 95%;
 }
 
@@ -317,9 +316,14 @@ nav {
 } */
 
 
+.home-vector {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
 
 
-@media (max-width: 54.2rem) {
+@media all and (max-width: 54.2rem) {
   .primary-navigation {
       text-align: center;
       position: fixed;
@@ -376,7 +380,7 @@ nav {
 
 }
 
-@media (min-width: 54.2em) {
+@media (min-width: 54.2rem) {
   .primary-navigation {
     padding-inline: 1rem;
     margin-block: 2rem;
@@ -496,7 +500,7 @@ nav {
 
 body {
   background-size: cover;
-  background-position: bottom center;
+ /* background-position: bottom center;*/
 }
 
 .home {
@@ -512,7 +516,7 @@ body {
   font-size: larger;
 }
 
-@media (min-width: 35rem) {
+/*@media (min-device-width: 35rem) {
   .home {
     background-image: url('./assets/hac-back-tablet.png');
     background-position: center center;
@@ -521,17 +525,34 @@ body {
     background-position: center center;
     background-image: url(./assets/destination/background-destination-desktop.jpg);
   }
-}
+}*/
 
-@media (min-width: 45rem) {
+/*@media (min-device-width: 45rem) {
   .home {
-    /*background-color: #f0f0f0;*/
-    /*background-position: center center;*/
     background-image: url('./assets/hac-back.png');
     background-position: center center;
     background-repeat: no-repeat;
   }
   .destination {
     background-image: url(./assets/destination/background-destination-desktop.jpg);
+  }
+}*/
+
+
+
+@media (min-device-width: 35rem) { 
+  .home {
+    background-image: url('./assets/hac-back-tablet.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1)
+and (min-device-width: 45rem) { 
+  .home {
+    background-image: url('./assets/hac-back.png');
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }

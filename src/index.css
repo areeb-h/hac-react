@@ -89,7 +89,7 @@ body {
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
   color: hsl( var(--clr-dark) );
-  background-color: hsl( var(--clr-dark) );
+  background-color: #CFE7D8;
   line-height: 1.5;
   min-height: 100vh;
   
