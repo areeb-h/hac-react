@@ -356,20 +356,30 @@ nav {
     background-image: url('./assets/shared/icon-close.svg');
   }
 
+  .toggle-icon {
+    background-color: aqua;
+    height: 20px;
+  }
+
   .mobile-nav-toggle {
+
+    
     cursor: pointer;
       display: block;
       position: absolute;
       z-index: 2000;
       right: 1.5rem;
-      top: 2rem;
+      top: 1.5rem;
       background: transparent;
       background-image: url(./assets/shared/icon-hamburger.svg);
       background-repeat: no-repeat;
       background-position: center;
-      width: 1.5rem;
+      width: 3.5rem;
       aspect-ratio: 1;
       border: 0;
+      background-color: hsl( var(--clr-white) / 0.4);
+      backdrop-filter: blur(1.1rem);
+      border-radius: .6rem;
   }
 
   .mobile-nav-toggle:focus-visible {
