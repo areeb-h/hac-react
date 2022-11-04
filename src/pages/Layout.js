@@ -22,9 +22,10 @@ const Layout = () => {
                 <button aria-expanded={isActive ? "false" : "true"} onClick={Toggle} className="mobile-nav-toggle">
                     <span className="sr-only">Menu</span>
                 </button>
+                        {/* <ul className='hidden sm:flex nav-links' id="navbar-default"> */}
                 <nav>
                     <ul data-visible={isActive ? "false" : "true"} className="primary-navigation link-hover-indicators flex">
-                        <NavLink onClick={Toggle}  to="/" end className={linkStyle}>Home</NavLink> 
+                        <NavLink onClick={Toggle} to="/" end className={linkStyle}>Home</NavLink> 
                         <NavLink onClick={Toggle} to="about" className={linkStyle}>About</NavLink> 
                         <NavLink onClick={Toggle} to="programs" className={linkStyle}>Programs</NavLink>
                         <NavLink onClick={Toggle} to="gallery" className={linkStyle}>Gallery</NavLink>
